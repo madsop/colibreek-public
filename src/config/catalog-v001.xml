@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Edited Redirect" name="http://purl.oclc.org/NET/ssnx/ssn" uri="ssn.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://purl.oclc.org/NET/ssnx/ssn" uri="ssn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://micra.com/COSMO/COSMO.owl" uri="COSMO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://purl.org/IoT/iot" uri="IoT-ontology_v2.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://www.loa-cnr.it/ontologies/DUL.owl" uri="DUL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://www.semanticweb.org/mads/ontologies/2014/2/untitled-ontology-24" uri="mechanicalFromGroundWithSSN.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://www.semanticweb.org/mads/ontologies/2014/2/untitled-ontology-25" uri="turbineAGB.owl"/>
+    </group>
+    <uri id="Imports Wizard Entry" name="http://gaia.fdi.ucm.es/ontologies/vacation.owl" uri="testvacation.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1395070167224" name="http://purl.oclc.org/NET/ssnx/ssn" uri="ssn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://micra.com/COSMO/COSMO.owl" uri="COSMO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167224" name="http://purl.org/IoT/iot" uri="IoT-ontology_v2.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167224" name="http://www.loa-cnr.it/ontologies/DUL.owl" uri="DUL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167224" name="http://www.semanticweb.org/mads/ontologies/2014/2/untitled-ontology-24" uri="mechanicalFromGroundWithSSN.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395070167207" name="http://www.semanticweb.org/mads/ontologies/2014/2/untitled-ontology-25" uri="turbineAGB.owl"/>
+    </group>
+</catalog>

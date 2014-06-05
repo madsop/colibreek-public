@@ -1,0 +1,70 @@
+<OntologyConfiguration>
+	<MainOntology>
+		<URL>http://www.semanticweb.org/mads/ontologies/2014/2/untitled-ontology-25</URL>
+		<LocalCopy>config/turbineAGB.owl</LocalCopy>
+	</MainOntology>	
+	
+	<!-- There are not subontologies -->
+	
+	<CaseMainConcept>TurbineAGBCase</CaseMainConcept>
+	
+	<DescriptionClassName>colibreek.domain.turbineagbcase.TurbineAGBCaseDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>
+			<Property>hasID</Property>
+			<Concept>CaseID</Concept>
+			<Attribute>CaseID</Attribute>
+		</Map>
+		<Map>
+			<Property>hasTimestamp</Property>
+			<Concept>Timestamp</Concept>
+			<Attribute>Timestamp</Attribute>
+		</Map>
+		<Map>
+			<Property>hasTurbineShaftSpeed</Property>
+			<Concept>TurbineShaftSpeed</Concept>
+			<Attribute>TurbineShaftSpeed</Attribute>
+		</Map>
+		<Map>
+			<Property>hasAGBBearingSumpTemperature</Property>
+			<Concept>AGBBearingSumpTemperature</Concept>
+			<Attribute>AGBBearingSumpTemperature</Attribute>
+		</Map>
+		<Map>
+			<Property>hasLubeOilSupplyPressure</Property>
+			<Concept>LubeOilSupplyPressure</Concept>
+			<Attribute>LubeOilSupplyPressure</Attribute>
+		</Map>
+		<Map>
+			<Property>hasLubeOilSupplyTemperature</Property>
+			<Concept>LubeOilSupplyTemperature</Concept>
+			<Attribute>LubeOilSupplyTemperature</Attribute>
+		</Map>
+		<Map>
+			<Property>hasFuelGasPressure</Property>
+			<Concept>FuelGasPressure</Concept>
+			<Attribute>FuelGasPressure</Attribute>
+		</Map>
+		<Map>
+			<Property>hasGGBSumpTemperature</Property>
+			<Concept>GGBSumpTemperature</Concept>
+			<Attribute>GGBSumpTemperature</Attribute>
+		</Map>
+		<Map>
+			<Property>hasGGCSumpTemperature</Property>
+			<Concept>GGCSumpTemperature</Concept>
+			<Attribute>GGCSumpTemperature</Attribute>
+		</Map>
+	</DescriptionMappings>
+	
+	<SolutionClassName>colibreek.domain.turbineagbcase.TurbineAGBCaseSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>
+			<Property>isAlarmingSituation</Property>
+			<Concept>AlarmingSituation</Concept>
+			<Attribute>IsAlarmingSituation</Attribute>
+		</Map>
+	</SolutionMappings>
+
+
+</OntologyConfiguration>

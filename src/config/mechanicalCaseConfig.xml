@@ -1,0 +1,75 @@
+<OntologyConfiguration>
+	<MainOntology>
+		<URL>http://www.semanticweb.org/mads/ontologies/2014/2/untitled-ontology-24</URL>
+		<LocalCopy>config/mechanicalFromGroundWithSSN.owl</LocalCopy>
+	</MainOntology>	
+	
+	<!-- There are not subontologies -->
+	
+	<CaseMainConcept>MechanicalCase</CaseMainConcept>
+	
+	<DescriptionClassName>colibreek.domain.mechanicalcase.MechanicalCaseDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>
+			<Property>hasID</Property>
+			<Concept>CaseID</Concept>
+			<Attribute>CaseID</Attribute>
+		</Map>
+		<Map>
+			<Property>hasTimestamp</Property>
+			<Concept>Timestamp</Concept>
+			<Attribute>Timestamp</Attribute>
+		</Map>
+		<Map>
+			<Property>hasGeneratorID</Property>
+			<Concept>Generator</Concept>
+			<Attribute>GeneratorID</Attribute>
+		</Map>
+		<Map>
+			<Property>hasGeneratorPower</Property>
+			<Concept>GeneratorPower</Concept>
+			<Attribute>GeneratorPower</Attribute>
+		</Map>
+		<Map>
+			<Property>hasExciterFieldVoltage</Property>
+			<Concept>ExciterFieldVoltage</Concept>
+			<Attribute>ExciterFieldVoltage</Attribute>
+		</Map>
+		<Map>
+			<Property>hasFrequency</Property>
+			<Concept>Frequency</Concept>
+			<Attribute>Frequency</Attribute>
+		</Map>
+		<Map>
+			<Property>hasExciterFieldCurrent</Property>
+			<Concept>ExciterFieldCurrent</Concept>
+			<Attribute>ExciterFieldCurrent</Attribute>
+		</Map>
+		<Map>
+			<Property>hasReactiveLoad</Property>
+			<Concept>ReactiveLoad</Concept>
+			<Attribute>ReactiveLoad</Attribute>
+		</Map>
+		<Map>
+			<Property>hasPhaseACurrent</Property>
+			<Concept>PhaseACurrent</Concept>
+			<Attribute>PhaseACurrent</Attribute>
+		</Map>
+		<Map>
+			<Property>hasPhaseBCurrent</Property>
+			<Concept>PhaseBCurrent</Concept>
+			<Attribute>PhaseBCurrent</Attribute>
+		</Map>
+	</DescriptionMappings>
+	
+	<SolutionClassName>colibreek.domain.mechanicalcase.MechanicalCaseSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>
+			<Property>isAlarmingSituation</Property>
+			<Concept>AlarmingSituation</Concept>
+			<Attribute>IsAlarmingSituation</Attribute>
+		</Map>
+	</SolutionMappings>
+
+
+</OntologyConfiguration>

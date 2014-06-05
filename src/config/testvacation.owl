@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://gaia.fdi.ucm.es/ontologies/vacation.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl"/>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#APARTMENT_CAT">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CATEGORY"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#RELAX">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOLIDAY_TYPE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#PERSONS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOTEL_CAT">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CATEGORY"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SPRING">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SEASON"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#AIR">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#TRANSPORTATION"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SURFACE">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#TRANSPORTATION"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#WINTER">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SEASON"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_SUMMER_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SUMMER"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CATEGORY">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_RELAX_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#RELAX"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_NO_RELAX_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#NO_RELAX"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_HOTEL_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOTEL_CAT"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#AUTUM">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SEASON"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_APARTMENT_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#APARTMENT_CAT"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_DESCRIPTION"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBRCASE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_SURFACE_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SURFACE"/>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#DESTINATION">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SEASON">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_SPRING_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SPRING"/>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_AIR_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#AIR"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_AUTUM_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#AUTUM"/>
+          </owl:Restriction>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#NO_RELAX">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOLIDAY_TYPE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SUMMER">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SEASON"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#DURATION">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#PRICE">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#TRANSPORTATION">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_WINTER_CASE">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#WINTER"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOLIDAY_TYPE">
+    <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-DESCRIPTION">
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBRCASE"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_DESCRIPTION"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-PRICE">
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#PRICE"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-PERSONS">
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#PERSONS"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-DURATION">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#DURATION"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-SEASON">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#SEASON"/>
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_HOTEL_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_SURFACE_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_AIR_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_WINTER_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_AUTUM_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_DESCRIPTION"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_SUMMER_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_NO_RELAX_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_RELAX_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_SPRING_CASE"/>
+          <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_APARTMENT_CASE"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CBR_INDEX"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-DESTINATION">
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#DESTINATION"/>
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+    <rdfs:subPropertyOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-HOLIDAY_TYPE">
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+    <rdfs:subPropertyOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOLIDAY_TYPE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-CATEGORY">
+    <rdfs:subPropertyOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CATEGORY"/>
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-TRANSPORTATION">
+    <rdfs:subPropertyOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HAS-ATTRIBUTE"/>
+    <rdfs:domain rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#VACATION_CASE"/>
+    <rdfs:range rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#TRANSPORTATION"/>
+  </owl:ObjectProperty>
+    <DESTINATION rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#FANO"/>
+      <WINTER rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#January"/>
+      <SUMMER rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#July"/>
+  <VACATION_CASE rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I50">
+    <HAS-PRICE rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I789.00"/>
+    <HAS-CATEGORY>
+	<APARTMENT_CAT rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOLIDAYFLAT"/>
+    </HAS-CATEGORY>
+    <HAS-DESTINATION rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#FANO"/>
+    <HAS-PERSONS>
+	<PERSONS rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I5"/>
+    </HAS-PERSONS>
+    <HAS-SEASON>
+      <SPRING rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#May"/>
+    </HAS-SEASON>
+    <HAS-DURATION rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I7"/>
+    <HAS-HOLIDAY_TYPE>
+      <RELAX rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#RECREATION"/>
+    </HAS-HOLIDAY_TYPE>
+    <HAS-TRANSPORTATION>
+      <SURFACE rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CAR"/>
+    </HAS-TRANSPORTATION>
+  </VACATION_CASE>
+  <VACATION_CASE rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I974">
+    <HAS-PRICE>
+	<PRICE rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I454.00"/>
+    </HAS-PRICE>
+    <HAS-TRANSPORTATION rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#CAR"/>
+        <HAS-HOLIDAY_TYPE>
+          <NO_RELAX rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#ACTIVE"/>
+        </HAS-HOLIDAY_TYPE>
+    <HAS-PERSONS>
+      <DURATION rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I4"/>
+    </HAS-PERSONS>
+    <HAS-CATEGORY rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#HOLIDAYFLAT"/>
+    <HAS-SEASON>
+      <SPRING rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#April"/>
+    </HAS-SEASON>
+    <HAS-DURATION rdf:resource="http://gaia.fdi.ucm.es/ontologies/vacation.owl#I7"/>
+    <HAS-DESTINATION>
+      <DESTINATION rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#BLACKFOREST"/>
+    </HAS-DESTINATION>
+  </VACATION_CASE>
+  <VACATION_CASE rdf:about="http://gaia.fdi.ucm.es/ontologies/vacation.owl#IForTest">
+  </VACATION_CASE>
+</rdf:RDF>
