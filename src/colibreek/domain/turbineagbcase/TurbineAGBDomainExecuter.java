@@ -37,13 +37,6 @@ public class TurbineAGBDomainExecuter extends DomainExecuter {
 		queryDescription.setFuelGasPressure(inputRetriever.getValueFromUser("Give fuel gas pressure", "Fuel gas pressure"));
 		queryDescription.setGGBSumpTemperature(inputRetriever.getValueFromUser("Give GGB sump temperature", "GGB sump temperature"));
 		queryDescription.setGGCSumpTemperature(inputRetriever.getValueFromUser("Give GGC sump temperature", "GGC sump temperature"));
-//		queryDescription.setTurbineShaftSpeed(new Instance("9104.4"));
-//		queryDescription.setAGBBearingSumpTemperature(new Instance("94.3"));
-//		queryDescription.setFuelGasPressure(new Instance("29.7"));
-//		queryDescription.setGGBSumpTemperature(new Instance("117.8"));
-//		queryDescription.setGGCSumpTemperature(new Instance("128.1"));
-//		queryDescription.setLubeOilSupplyPressure(new Instance("4"));
-//		queryDescription.setLubeOilSupplyTemperature(new Instance("65.7"));
 		query.setDescription(queryDescription);
 		return query;
 	}

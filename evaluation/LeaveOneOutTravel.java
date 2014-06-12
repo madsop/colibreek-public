@@ -12,7 +12,7 @@ import jcolibri.exception.InitializingException;
 
 public class LeaveOneOutTravel extends LeaveOneOutTest {
 
-//	@Test
+	@Test
 	public void testOneOutTravel() throws InitializingException {
 		leaveOneOutTest();
 	}

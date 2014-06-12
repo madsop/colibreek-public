@@ -67,14 +67,12 @@ public abstract class LeaveOneOutTest {
 
 		int numberOfSuccesses = 0;
 
-		//		for(CBRCase queryCase : cases) {
 		for (int i = 0; i < cases.size(); i++) {
 			CBRCase queryCase = cases.get(i);
 			casebase.forgetCases(Arrays.asList(queryCase));
 			
 			numberOfSuccesses += runSingleCase(casebase, i, queryCase);
 
-			//Recover case base
 			casebase.learnCases(Arrays.asList(queryCase));
 		}
 

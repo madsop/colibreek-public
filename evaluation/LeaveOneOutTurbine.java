@@ -13,7 +13,7 @@ import colibreek.domain.turbineagbcase.TurbineAGBCaseSolution;
 
 public class LeaveOneOutTurbine extends LeaveOneOutTest {
 
-//	@Test
+	@Test
 	public void testOneOutTurbine() throws InitializingException {
 		leaveOneOutTest();
 	}

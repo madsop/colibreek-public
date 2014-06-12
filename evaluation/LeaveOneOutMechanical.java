@@ -13,7 +13,7 @@ import colibreek.domain.mechanicalcase.MechanicalCaseSolution;
 
 public class LeaveOneOutMechanical extends LeaveOneOutTest {
 
-//	@Test
+	@Test
 	public void testOneOutMechanical() throws InitializingException {
 		leaveOneOutTest();
 	}

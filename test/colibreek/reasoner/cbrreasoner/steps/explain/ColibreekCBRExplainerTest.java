@@ -56,7 +56,7 @@ public class ColibreekCBRExplainerTest {
 		Assert.assertEquals(similarityMaxInListing,similarityOfFirst, 0.000001);
 	}
 
-	//	@Test
+	@Test
 	public void testThatFindingsNotEqualButSomewhatRelatedAreAlsoCounted() throws OntologyAccessException {
 		CaseDescription newCase = StaticTravelDomainTestHelper.createExampleCase("January");
 
@@ -77,7 +77,7 @@ public class ColibreekCBRExplainerTest {
 
 		System.out.println(explanationResult.getMostSimilar().getCase().getID() + ": " + explanationResult.getMostSimilar().getSimilarity());
 		System.out.println(explanationResult.getExplanations().get(explanationResult.getExplanations().size()-1).getSimilarity());
-		
+
 		for (FindingSimilarity findingSimilarity : explanationResult.getMostSimilar().getFindingSimilarities()) {
 			if (findingSimilarity.getTrace().contains("May")) {
 				Assert.assertTrue(Math.abs(findingSimilarity.getSimilarityValue() - 0.3333333333) < 0.0001);
@@ -99,7 +99,7 @@ public class ColibreekCBRExplainerTest {
 		Assert.assertEquals(newCase.getCaseFindings().size(), explanationForBestHit.getFindingSimilarities().size());
 	}
 
-	
+
 	@Test
 	public void testWithFindingFromNewCaseNull() throws OntologyAccessException {
 		TravelCaseDescription newCaseDescription = StaticTravelDomainTestHelper.createExampleCase("May");
@@ -113,11 +113,11 @@ public class ColibreekCBRExplainerTest {
 		caseToAddAsCollection.add(oldCase);
 		activatedArea.addCases(caseToAddAsCollection);
 		activatedArea.addStatements(statements);
-		
+
 		explainer.explain(activatedArea, newCaseDescription);
 		Assert.assertTrue(newCaseDescription.getAccommodation() == null);
 	}
-	
+
 	@After
 	public void tearDown() {
 		casebase.close();

@@ -17,30 +17,19 @@ public class TravelCaseSolution extends CaseSolution {
 		
 		return new Attribute("mainConcept", this.getClass());
 	}
-	/**
-	 * @return Returns the id.
-	 */
+	
 	public Instance getMainConcept() {
 		return mainConcept;
 	}
 
-	/**
-	 * @param mc The main concept to set.
-	 */
 	public void setMainConcept(Instance mc) {
 		this.mainConcept = mc;
 	}
-
-	/**
-	 * @return Returns the price.
-	 */
+	
 	public Instance getPrice() {
 		return price;
 	}
 
-	/**
-	 * @param price The price to set.
-	 */
 	public void setPrice(Instance price) {
 		this.price = price;
 	}

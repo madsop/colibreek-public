@@ -25,10 +25,6 @@ public abstract class DomainDependentConfigurations {
 		return similarity;
 	}
 
-	/**
-	 * The default set of spreading relations are the instances of transitive-relation, i.e:
-	subclass-of, instance-of, part-of, member-of, function-of, caused-by (p292)
-	 */
 	public Collection<String> getRelationTypesThatShouldLeadToActivation() {
 		Set<String> relationTypesLeadingToActivation = new HashSet<>();
 		relationTypesLeadingToActivation.add("subClassOf");
